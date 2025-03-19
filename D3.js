@@ -52,7 +52,8 @@ const starWarsCharacters = [
   {
     name: "Owen Lars",
     height: 178,
-    mass: 120,
+    mass: 220,
+    // mass: 120,
     hair_color: "brown, grey",
     skin_color: "light",
     eye_color: "blue",
@@ -199,19 +200,20 @@ console.log("peso totale", crewMass);
 
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
-if (crewMass< 500 ){
-  console.log ("Ship is under loaded");
-}
-if (crewMass >500 && crewMass < 700 ){
-  console.log ("Warning: Load is over 700");
-}
-if (crewMass< 500 ){
-  console.log ("Ship is under loaded");
-
-}
-if (crewMass< 500 ){
-  console.log ("Ship is under loaded");
-
+if (crewMass < 500) {
+  console.log("Ship is under loaded");
+} else if (crewMass > 500 && crewMass < 700) {
+  console.log("Ship is half loaded");
+} else if (crewMass > 700 && crewMass < 900) {
+  console.log("Warning: Load is over 700");
+} else if (crewMass > 900 && crewMass < 1000) {
+  console.log("Critical Load: Over 900");
+} else {
+  console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
+  console.log("3...");
+  console.log("2...");
+  console.log("1...");
+  console.log("BOOM");
 }
 
 /* ESERCIZIO 8
